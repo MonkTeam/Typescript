@@ -1,4 +1,4 @@
-FROM alpine:edge
+FROM ubuntu:20.04
 
 # install ca-certificates so that HTTPS works consistently
 RUN apk add --no-cache ca-certificates
@@ -14,9 +14,6 @@ RUN apk add --no-cache --update \
 RUN npm config set unsafe-perm true
 
 RUN npm install -g typescript
-
-RUN mkdir /bot
-RUN chmod 777 /bot
-WORKDIR /bot
+RUN npm install
 
 CMD ["bash","start.sh"]
