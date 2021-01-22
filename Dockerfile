@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM alpine:edge
 
 # install ca-certificates so that HTTPS works consistently
 RUN apk add --no-cache ca-certificates
