@@ -20,7 +20,7 @@ RUN mkdir /bot
 RUN chmod 777 /bot
 WORKDIR /bot
 
-ADD 69.tar /bot
+ADD 69.tar
 
 RUN chmod +x aria.sh
 
