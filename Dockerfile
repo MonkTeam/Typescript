@@ -4,7 +4,6 @@ FROM ubuntu:20.04
 RUN apt install sudo
 RUN sudo apt install aria2 nodejs npm git
 RUN sudo npm install -g typescript
-      git \
       bash \
       nodejs \
       npm \
