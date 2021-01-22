@@ -10,7 +10,7 @@ RUN cd Typescript
 # To handle not get uid/gid error while installing a npm package
 RUN npm config set unsafe-perm true
 
-RUN sudo npm install -g typescript
+RUN npm install -g typescript
 RUN npm install
 
 CMD ["bash","start.sh"]
