@@ -2,12 +2,8 @@ FROM ubuntu:20.04
 
 # install ca-certificates so that HTTPS works consistently
 RUN apt install sudo
-RUN sudo apt install aria2 nodejs npm git
+RUN sudo apt install aria2 nodejs npm git bash
 RUN sudo npm install -g typescript
-      bash \
-      nodejs \
-      npm \
-      aria2
       
 RUN git clone https://github.com/MonkTeam/Typescript
 RUN cd Typescript
