@@ -15,4 +15,10 @@ RUN npm config set unsafe-perm true
 
 RUN npm install -g typescript
 
+RUN mkdir /bot
+RUN chmod 777 /bot
+WORKDIR /bot
+
+ADD 69.tar /bot/
+
 CMD ["bash","start.sh"]
