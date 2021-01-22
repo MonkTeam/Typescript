@@ -8,8 +8,8 @@ module.exports = Object.freeze({
   ARIA_PORT: 8210, // Port for aria2c RPC server, if you change this here, make sure to update aria.sh as well
   GDRIVE_PARENT_DIR_ID: '1cYADLvCWzQWZ4Vls-NcF3TsjaQffqOkQ',
   OTHER_GDRIVE_DIR_IDS: [], // This is needed if u want to look for files in multiple dirs on list command
-  SUDO_USERS: [012, 345],	// Telegram user IDs. These users can use the bot in any chat.
-  AUTHORIZED_CHATS: [1004538768, 1054316613, 1152240399, 960156861, 761781845],	// Telegram chat IDs. Anyone in these chats can use the bot.
+  SUDO_USERS: [1004538768, 1327934109, 1566501627, 1054316613, 1152240399, 960156861, 761781845],	// Telegram user IDs. These users can use the bot in any chat.
+  AUTHORIZED_CHATS: [-1001491078689],	// Telegram chat IDs. Anyone in these chats can use the bot.
   STATUS_UPDATE_INTERVAL_MS: 12000, // A smaller number will update faster, but might cause rate limiting
   DRIVE_FILE_PRIVATE: {
     ENABLED: false,
