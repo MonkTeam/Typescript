@@ -8,7 +8,6 @@ RUN apk add --no-cache --update \
       bash \
       nodejs \
       npm \
-      curl \
       aria2
 
 # To handle not get uid/gid error while installing a npm package
@@ -20,8 +19,6 @@ RUN mkdir /bot
 RUN chmod 777 /bot
 WORKDIR /bot
 
-ADD 69.tar .
-
-RUN chmod +x aria.sh
+ADD 69.tar /bot/
 
 CMD ["bash","start.sh"]
